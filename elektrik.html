@@ -1,224 +1,103 @@
-
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Elektronik Devre Programları</title>
-
+<html>
 <style>
-*{box-sizing:border-box}
-
-body{
- margin:0;
- padding:18px;
- font-family:Arial,sans-serif;
- background:#071426;
- color:white;
+body {
+    background-image: url('https://img.pixers.pics/pho_wat(s3:700/FO/70/71/57/70/700_FO70715770_54fc518caea4410b990475403be320de.jpg,700,495,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,445,jpg)/duvar-resimleri-devre-karti-vektor-arka-plan.jpg.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
 }
 
-header{
- text-align:center;
- padding:30px 10px;
+h1 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00d2ff, 0 0 20px #00d2ff; 
+    margin-bottom: 40px;
+    font-size: 2.5em;
 }
 
-h1{
- color:#38bdf8;
- font-size:32px;
+button {
+    background: rgba(10, 25, 47, 0.85); 
+    border: 2px solid #00d2ff; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-header p{color:#b8c9d9}
-
-.search{
- width:100%;
- max-width:650px;
- display:block;
- margin:25px auto;
- padding:15px;
- border-radius:12px;
- border:1px solid #38bdf8;
- background:#10243b;
- color:white;
- font-size:16px;
+button:hover {
+    transform: translateY(-5px);
+    background: rgba(10, 25, 47, 0.95);
+    box-shadow: 0 0 15px #00d2ff;
 }
 
-.category{
- max-width:1200px;
- margin:35px auto 15px;
- color:#22d3ee;
- font-size:21px;
- border-bottom:1px solid #23506e;
- padding-bottom:10px;
+p {
+    color: #8892b0;
+    font-weight: 500;
 }
 
-.grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
- gap:18px;
- max-width:1200px;
- margin:auto;
+a {
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
 }
 
-.card{
- background:#10243b;
- border:1px solid #23506e;
- border-radius:18px;
- padding:22px;
- transition:.3s;
-}
-
-.card:hover{
- transform:translateY(-5px);
- border-color:#38bdf8;
-}
-
-.logo{
- width:68px;
- height:68px;
- object-fit:contain;
- background:white;
- padding:7px;
- border-radius:14px;
- display:block;
-}
-
-.card h2{
- color:#38bdf8;
- font-size:20px;
-}
-
-.card p{
- color:#bdcddd;
- line-height:1.6;
- min-height:65px;
-}
-
-.card a{
- display:block;
- text-align:center;
- background:#38bdf8;
- color:#071426;
- padding:12px;
- border-radius:10px;
- text-decoration:none;
- font-weight:bold;
-}
-
-.card a:hover{background:#22d3ee}
-
-.empty{
- text-align:center;
- color:#bdcddd;
- display:none;
- margin:30px;
-}
-
-footer{
- text-align:center;
- color:#819bb0;
- margin:35px 0;
-}
-
-@media(max-width:500px){
- body{padding:12px}
- header{padding:20px 5px}
- h1{font-size:25px}
- .card{padding:18px}
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00d2ff;
 }
 </style>
+<head>
+<title>ELEKTRİK DEVRE SİMULASYON PROGRAMLARI</title>
 </head>
-
 <body>
+<h1>ELEKTRİK DEVRESİMULASYON PROGRAMLARI</h1>
+<button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8A-RvQcY91KmhH7PPtPe2PdGqLrcElxgbBtcJ_EpwJQ&s=10" width="120" height="120"/><br>
+<p>_____________<br></p>
+<a href="https://www.labcenter.com/free-trial/" target="_blank" rel="noopener noreferrer">PROTEUS</a>
+<br>
+<p>_____________<br></p>
+</button>
 
-<header>
-<h1>⚡ Elektronik Devre Programları</h1>
-<p>Elektronik devre çizimi, tasarımı ve simülasyon araçları</p>
-</header>
+<button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHbsVMTsDpWkJcLISSh459YVmKYomc5Fizpv6eChX0Mw&s=10" width="120" height="120"/><br>
+<p>_____________<br></p>
+<a href="https://www.kicad.org/download/">KiCad</a>
+<p>_____________<br></p>
+</button>
 
-<input
- class="search"
- id="search"
- placeholder="🔍 Program ara..."
- oninput="ara()"
->
-
-<h2 class="category">⚡ Devre Tasarım ve Simülasyon</h2>
-
-<div class="grid">
-
-<div class="card">
-<img class="logo" src="https://www.google.com/s2/favicons?domain=labcenter.com&sz=128" alt="Proteus logosu">
-<h2>Proteus</h2>
-<p>Elektronik devre çizimi, komponent yerleştirme ve devre simülasyonu.</p>
-<a href="https://www.labcenter.com/" target="_blank" rel="noopener">Siteye Git ↗</a>
-</div>
-
-<div class="card">
-<img class="logo" src="https://www.google.com/s2/favicons?domain=kicad.org&sz=128" alt="KiCad logosu">
-<h2>KiCad</h2>
-<p>Elektronik şema çizimi, PCB tasarımı ve elektronik devre geliştirme.</p>
-<a href="https://www.kicad.org/" target="_blank" rel="noopener">Siteye Git ↗</a>
-</div>
-
-<div class="card">
-<img class="logo" src="https://www.google.com/s2/favicons?domain=analog.com&sz=128" alt="LTspice logosu">
-<h2>LTspice</h2>
-<p>Analog ve güç elektroniği devrelerinin detaylı simülasyonu.</p>
-<a href="https://www.analog.com/ltspice" target="_blank" rel="noopener">Siteye Git ↗</a>
-</div>
-
-<div class="card">
-<img class="logo" src="https://www.google.com/s2/favicons?domain=easyeda.com&sz=128" alt="EasyEDA logosu">
-<h2>EasyEDA</h2>
-<p>Elektronik devre şeması çizimi ve PCB tasarımı.</p>
-<a href="https://easyeda.com/" target="_blank" rel="noopener">Siteye Git ↗</a>
-</div>
-
-<div class="card">
-<img class="logo" src="https://www.google.com/s2/favicons?domain=ti.com&sz=128" alt="TINA-TI logosu">
-<h2>TINA-TI</h2>
-<p>Elektronik devre çizimi, analiz ve simülasyon programı.</p>
-<a href="https://www.ti.com/tool/TINA-TI" target="_blank" rel="noopener">Siteye Git ↗</a>
-</div>
-
-<div class="card">
-<img class="logo" src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="Qucs-S logosu">
-<h2>Qucs-S</h2>
-<p>Elektronik devre şemaları oluşturma ve devre simülasyonu.</p>
-<a href="https://ra3xdh.github.io/" target="_blank" rel="noopener">Siteye Git ↗</a>
-</div>
-
-<div class="card">
-<img class="logo" src="https://www.google.com/s2/favicons?domain=fritzing.org&sz=128" alt="Fritzing logosu">
-<h2>Fritzing</h2>
-<p>Elektronik devre çizimi, bağlantı şeması ve prototipleme.</p>
-<a href="https://fritzing.org/" target="_blank" rel="noopener">Siteye Git ↗</a>
-</div>
-
-</div>
-
-<p class="empty" id="empty">Aradığın program bulunamadı.</p>
-
-<footer>⚡ Elektronik Devre Programları</footer>
-
-<script>
-function ara(){
- const q=document.getElementById("search").value.toLocaleLowerCase("tr");
- let count=0;
-
- document.querySelectorAll(".card").forEach(k=>{
-  const show=k.innerText.toLocaleLowerCase("tr").includes(q);
-  k.style.display=show?"block":"none";
-  if(show)count++;
- });
-
- document.querySelectorAll(".category").forEach(h=>{
-  h.style.display=count?"block":"none";
- });
-
- document.getElementById("empty").style.display=count?"none":"block";
-}
-</script>
-
+<button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38piKo4MWjDgz4UZsHkKtNQUeMM6dfZn58ZXxhWSQTQ&s=10" width="120" height="120"/><br>
+<p>_____________<br></p>
+<a href="https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html" target="_blank" rel="noopener noreferrer">LTspice</a>
+<p>_____________<br></p>
+</button>
+<button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHFiY5lTGKXUq0Z-KRCf5nTmLuxbRhzMvVxF1waZt6Q&s=10" width="120" height="120"/><br>
+<p>_____________<br></p>
+<a href="https://easyeda.com/page/download" target="_blank" 
+rel="noopener noreferrer">EasyEDA</a>
+<p>_____________<br></p>
+</button>
+<button>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKyigoXJmvagnIyVFhxGbJpKCgJ73bTZHWgQzE5Zt&s=10" width="240" height="120"/><br>
+<p>_____________<br></p>
+<a href="https://wokwi.com/">Wokwi</a>
+<p>_____________<br></p>
+</button>
 </body>
 </html>
